@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    .poppins-regular {
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body class="p-0 m-0 box-border">
+  <section class="relative justify-between items-center min-h-screen p-24 transition-all duration-500">
+    <header class="absolute top-0 left-0 w-full flex py-[20px] px-[100px] justify-between items-center">
+      <a href="#" class="text-[#333] text-2xl font-bold transition-all duration-1000">Nabhaan</a>
+      <ul class="flex gap-10 text-[#333] font-medium">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="relative max-w-[700px] justify-center flex items-center pt-[130px]">
+      <h3 class="text-8xl text-[#333] transition-transform duration-500">I am <span id="text" class="text-[orange]">Nabhaan</span></h3>
+    </div>
+    <br>
+    <button class="relative bg-[orange] px-[15px] py-[25px] text-white text-xl rounded-3xl mr-3 font-semibold">Download CV</button>
+    <button class="relative px-[15px] py-[25px] text-xl rounded-3xl mr-3 pl-6 font-semibold">Let's Chat</button>
+
+    <div id="daynight" class="absolute bottom-10 left-[50%] bg-[#F0f0f0] rounded-[50%] w-16 h-16 flex justify-center items-center cursor-pointer text-3xl">
+      <ion-icon name="moon-outline" class="text-2xl cursor-pointer hover:text-[orange]" id="toggleDark"></ion-icon>
+      <ion-icon name="sunny-outline" class="text-2xl cursor-pointer hover:text-[orange] hidden" id="toggleLight"></ion-icon>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
